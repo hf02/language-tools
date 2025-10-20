@@ -105,7 +105,7 @@ describe('TypeScript - Cache invalidation', async () => {
 	});
 
 	// TODO: Unskip this once the upstream issue is fixed
-	it.skip('Can get auto-imports for new files', async () => {
+	it('Can get auto-imports for new files', async () => {
 		const fileNames = ['AutoImport.astro', 'AutoImport2.astro'];
 
 		const document = await languageServer.handle.openTextDocument(

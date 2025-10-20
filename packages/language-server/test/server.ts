@@ -36,6 +36,7 @@ export async function getLanguageServer(): Promise<LanguageServer> {
 					),
 				},
 				contentIntellisense: true,
+				disableAutoImportCache: true
 			},
 			{
 				textDocument: {
